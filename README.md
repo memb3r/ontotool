@@ -82,7 +82,7 @@ cd ontotool
 python3 ontotool.py
 ```
 
-Full docs for other Operating Systems: <a href='https://github.com/memb3r/ontotool/blob/master/INSTALLDOCS.md'>Click!</a>
+Full docs for other Operating Systems: <a href='https://github.com/memb3r/ontotool/blob/main/INSTALLDOCS.md'>Click!</a>
 
 # Usage
 
