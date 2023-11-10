@@ -219,11 +219,12 @@ links = {
 
 def moduleimport():
     print('Installing libraries...')
-    os.system('pip install colorama phonenumbers requests bs4')
+    os.system('pip install colorama phonenumbers requests bs4 geopy')
 
 try:
     import json
     from colorama import init, Fore, Back, Style
+    from geopy.geocoders import Nominatim
     import phonenumbers
     from phonenumbers import geocoder, carrier, timezone
     import requests
@@ -506,6 +507,9 @@ def iplook():
     print(f'    {Fore.RED}[{Fore.YELLOW}!{Fore.RED}] {Fore.WHITE}Searching geolocation...')
     ipgeolocation = f'{ipvalues["latitude"]}+{ipvalues["longitude"]}'
     print(f'    {Fore.RED}[{Fore.GREEN}+{Fore.RED}] {Fore.WHITE}Google Maps URL: https://www.google.com/maps/search/{ipgeolocation}')
+    geolocator = Nominatim(user_agent="Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148")
+    location = geolocator.reverse(f'{ipvalues["latitude"]}, {ipvalues["longitude"]}')
+    print(f'    {Fore.RED}[{Fore.GREEN}+{Fore.RED}] {Fore.WHITE}Address: {location.address}')
 
 if __name__ == '__main__':
     start()
