@@ -16,7 +16,7 @@
  _____     _       _____ _____ _____ __    
 |     |___| |_ ___|_   _|     |     |  |   
 |  |  |   |  _| . | | | |  |  |  |  |  |__ 
-|_____|_|_|_| |___| |_| |_____|_____|_____| v1.0.0
+|_____|_|_|_| |___| |_| |_____|_____|_____| v1.0.1
 
 [!] Hi! Welcome to OntoTOOL - proffesional OSINT tool. There you can find information from Open Sources.
 [!] Author: https://github.com/memb3r/
@@ -57,6 +57,7 @@
     [+] whatismyipaddress.com URL: https://whatismyipaddress.com/ip/8.8.8.8
     [!] Searching geolocation...
     [+] Google Maps URL: https://www.google.com/maps/search/37.42301+-122.083352
+    [+] Address: 1643, Amphitheatre Parkway, Mountain View, Santa Clara County, California, 94043, United States
 [?] Input answer here:
 ```
 
