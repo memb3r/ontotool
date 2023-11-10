@@ -233,7 +233,7 @@ except ModuleNotFoundError:
     moduleimport()
 
 author = 'memb3r'
-version = 'v1.0.0'
+version = 'v1.0.1'
 byauthor = 'by memb3r'
 authorurl = 'https://github.com/memb3r/'
 
@@ -419,17 +419,6 @@ def emaill():
             print(f"    {Fore.RED}[{Fore.RED}X{Fore.RED}] {Fore.RED}Failed searching name.")
     else:
         print(f"    {Fore.RED}[{Fore.RED}X{Fore.RED}] {Fore.RED}Response status code: {response.status_code}")
-    print(f'    {Fore.RED}[{Fore.YELLOW}!{Fore.RED}] {Fore.WHITE}Searching all social media...')
-    results = {}
-    for networks, url_templates in links.items():
-        full_urls = url_templates.format(eusername)
-        response = requests.get(full_urls)
-        if response.status_code == 200:
-            time.sleep(0.1)
-            print(f'    {Fore.RED}[{Fore.GREEN}+{Fore.RED}] {Fore.WHITE}{networks}: {full_urls}')
-            results[networks] = full_urls
-    if not results:
-        print(f"    {Fore.RED}[{Fore.RED}X{Fore.RED}] {Fore.RED}Social media accounts by {eusername} are not found.")
 
 def usernamm():
     print(f'{Fore.RED}[{Fore.CYAN}USER{Fore.RED}]{Fore.WHITE}:')
